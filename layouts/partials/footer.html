@@ -5,8 +5,8 @@
         <p>{{ . }}</p>
       {{ end }}
       {{ if not .Site.Params.hideImpressum}}
-        <a href="{{ .Site.Params.impressumURL | absLangURL}}">impressum"</a>
-      {{end}
+        <p><a href="{{ .Site.Params.impressumURL | absLangURL}}">Datenschutz & Impressum</a></p>
+      {{end}}
       {{ if not .Site.Params.hideCopyright }}
         ©
         {{ if (and (.Site.Params.since) (lt .Site.Params.since now.Year)) }}
